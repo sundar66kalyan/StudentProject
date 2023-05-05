@@ -24,7 +24,7 @@ public class StudentController {
 	StudentService studser;
 
 	// adding the single StudentDetails
-	@PostMapping(value = "/add")
+	@PostMapping(value = "/addstudent")
 	public String addStudentDetails(@RequestBody Student e) throws StudentAgeException {
 		return studser.addStudentDetails(e);
 	}
